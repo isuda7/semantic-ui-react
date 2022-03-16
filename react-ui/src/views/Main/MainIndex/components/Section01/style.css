@@ -1,2 +1,8 @@
 /* Event Section */
-.main_event_sec .main_event_item {display:flex; justify-content:center; align-items: center ;height:150px; background-color: lightgray;}
+.main_event_sec .main_event_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: lightgray;
+}
