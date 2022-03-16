@@ -1,0 +1,21 @@
+/*******************************
+         Site Overrides
+*******************************/
+/* Default */
+.ui.label {display:inline-flex; align-items:center; justify-content:space-beteen; margin:0; text-align:center; color:#fff;}
+
+/* Category Labels */
+.ui.label.cate {border-radius:4px; background-color:var(--color-bg-light);}
+.ui.label.cate.ai {background-color:var(--color-cate-ai);}
+.ui.label.cate.dt {background-color:var(--color-cate-dt);}
+.ui.label.cate.happinesst {background-color:var(--color-cate-happinesst);}
+.ui.label.cate.sv {background-color:var(--color-cate-sv);}
+.ui.label.cate.design {background-color:var(--color-cate-design);}
+.ui.label.cate.global {background-color:var(--color-cate-global);}
+.ui.label.cate.leadership {background-color:var(--color-cate-leadership);}
+.ui.label.cate.management {background-color:var(--color-cate-management);}
+.ui.label.cate.semicond {background-color:var(--color-cate-semicond);}
+.ui.label.cate.skacademy {background-color:var(--color-cate-skacademy);}
+.ui.label.cate.energy {background-color:var(--color-cate-energy);}
+.ui.label.cate.bmd {background-color:var(--color-cate-bmd);}
+.ui.label.cate.academy {background-color:var(--color-cate-academy);}
