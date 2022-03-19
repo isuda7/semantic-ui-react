@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
-import {Dimmer, Button, Icon} from 'semantic-ui-react'
+import {Button, Icon} from 'semantic-ui-react'
 import {Navigation} from '../../components'
 import './style.css';
 

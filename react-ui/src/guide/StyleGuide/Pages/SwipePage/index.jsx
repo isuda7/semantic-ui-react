@@ -8,7 +8,7 @@ class SwipePage extends Component {
             <section className='g_sec'>
                 <h2 className='g_h2'>Swipes</h2>
                 <h3 className='g_h3'>Guides</h3>
-                <p>- API OPTIONS: <a href='https://react-id-swiper.ashernguyen.site/' target='_blank'>react-id-swiper 바로가기</a></p>
+                <p>- API OPTIONS: <a href='https://react-id-swiper.ashernguyen.site/' target='_blank' rel='noopener noreferrer'>react-id-swiper 바로가기</a></p>
                 <p>- 독립적입 컴포넌트로 분리하며 클래스명을 전달한다.</p>
                 <p>- className='swiper [이름]_swiper' 로 시작한다.</p>
                 <p>- navigation, pagination 위치는 .swiper 자식이다.</p>

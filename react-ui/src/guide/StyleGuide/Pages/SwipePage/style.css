@@ -2,8 +2,8 @@
 .sample1_swiper .swiper-controller {display:flex; justify-content:center; align-items:center; padding-top:10px}
 .sample1_swiper .swiper-controller .swiper-pagination {position: static; width:auto;}
 .sample1_swiper .swiper-controller .swiper-autoplay {margin-left:10px;}
-.sample1_swiper .swiper-controller .swiper-button-prev,
-.sample1_swiper .swiper-controller .swiper-button-next {top:calc(100px / 2);}
+.sample1_swiper > .swiper-button-prev,
+.sample1_swiper > .swiper-button-next {top:calc(100px / 2);}
 .sample2_swiper .swiper-slide {display:flex; justify-content:center; align-items:center; width:240px; height:100px; background-color:#eee;}
 .sample2_swiper > .swiper-button-prev {left:-20px;}
 .sample2_swiper > .swiper-button-next {right:-20px;}

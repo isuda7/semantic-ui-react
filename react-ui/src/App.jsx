@@ -37,7 +37,7 @@ import LayoutBlank from './layouts/LayoutBlank/';
 import MainIndex from './views/Main/MainIndex/';
 
 // Sub
-import Sample from './views/Sample/';
+// import Sample from './views/Sample/';
 
 const Router = () => {
     return (

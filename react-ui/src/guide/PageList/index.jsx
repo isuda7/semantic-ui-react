@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Segment, Table} from 'semantic-ui-react';
+import {Table} from 'semantic-ui-react';
 import Gnb from './gnb';
 import './style.css';
 
@@ -8,7 +8,7 @@ class PageList extends Component {
     render() {
         return (
             <div className='ia_wrap'>
-                <iframe src='/main/mainIndex' frameBorder='0' height='760px' name='reactFrame'></iframe>
+                <iframe src='/main/mainIndex' frameBorder='0' height='760px' title='Prevoew' name='reactFrame'></iframe>
                 <div className='ia_container'>
                     <Gnb />
                     <Table celled structured selectable>

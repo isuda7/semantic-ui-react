@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Grid, Icon, Image} from "semantic-ui-react";
+import {Icon, Image} from "semantic-ui-react";
 import avatar36_01 from "../../../../resources/images/demo/avata-profile-36-01.svg";
 import avatar48_01 from "../../../../resources/images/demo/avata-profile-48-01.svg";
 import avatar56_01 from "../../../../resources/images/demo/avata-profile-56-01.svg";

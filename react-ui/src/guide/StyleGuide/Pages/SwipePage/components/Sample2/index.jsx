@@ -11,8 +11,8 @@ const Sample2 = ({swipeName}) => {
 		loop: true,
 		speed:300,
 		navigation: {
-			nextEl: '.' + swipeName + ' .swiper-button-next',
-			prevEl: '.' + swipeName + ' .swiper-button-prev',
+			nextEl: '.' + swipeName + '> .swiper-button-next',
+			prevEl: '.' + swipeName + '> .swiper-button-prev',
 		},
 	}
 

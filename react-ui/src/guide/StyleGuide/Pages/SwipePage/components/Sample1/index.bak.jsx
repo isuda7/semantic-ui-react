@@ -8,6 +8,23 @@ const Sample1 = ({swipeName}) => {
     const [play, setPlay] = useState(true);
 
     useEffect(() => {
+		const swiperInstance = document.querySelector('.swiper-container').swiper;
+		setMySwiper(swiperInstance);
+
+		// disableOnInteraction: true && pagination.clickable: true 일때 (pagination 클릭시 정지)
+		if (swiperParam.autoplay.disableOnInteraction === true && swiperParam.pagination.clickable === true) {
+			const paginationEl = document.querySelector('.' + swipeName + ' .swiper-pagination');
+			const handlerPaginationPause = (e) => {
+				(e.target === paginationEl.querySelector('.swiper-pagination-bullet-active')) && setPlay(false);
+			}
+			paginationEl.addEventListener('click', handlerPaginationPause);			
+			return () => {
+				paginationEl.removeEventListener('click', handlerPaginationPause);
+			}
+		}
+    }, []);
+
+    useEffect(() => {
 		if (mySwiper !== null) {
 			if (play) {
 				mySwiper.autoplay.start();
@@ -20,6 +37,11 @@ const Sample1 = ({swipeName}) => {
 	const handlerAutoplayToggle = () => {
 		setPlay(!play);
 	}
+
+	// disableOnInteraction: true && navigation 사용시 (navigation 클릭시 정지)
+	const handlerAutoplayPause = () => {
+		(swiperParam.autoplay.disableOnInteraction === true) && setPlay(false);
+	}	
 	// E: Autoplay 재생/정지 대응
 
 	const swiperParam = {
@@ -28,18 +50,23 @@ const Sample1 = ({swipeName}) => {
 		loop: true,
         autoplay: {
             delay: 1000, // Test Delay
-			disableOnInteraction: false
+			disableOnInteraction: true
         },
 		navigation: {
 			nextEl: '.' + swipeName + '> .swiper-button-next',
 			prevEl: '.' + swipeName + '> .swiper-button-prev',
 		},
 		pagination: {
-			el: '.'+ swipeName +'> .swiper-controller .swiper-pagination',
+			el: '.'+ swipeName +'> .swiper-pagination',
 			type: 'bullets',
 			clickable: true
 		},
-		getSwiper: setMySwiper
+		on: {
+			// disableOnInteraction: true 일때 사용 (터치대응)
+			touchMove: () => {
+				(swiperParam.autoplay.disableOnInteraction === true) && setPlay(false);
+			}
+		}
 	}
 
 	return (
@@ -51,9 +78,9 @@ const Sample1 = ({swipeName}) => {
 				<div>Basic #4</div>
 				<div>Basic #5</div>
 			</Swiper>
-			<button type='button' className='swiper-button-prev'></button>
-			<button type='button' className='swiper-button-next'></button>
 			<div className='swiper-controller'>
+				<button type='button' className='swiper-button-prev' onClick={handlerAutoplayPause}></button>
+				<button type='button' className='swiper-button-next' onClick={handlerAutoplayPause}></button>
 				<div className='swiper-pagination'></div>
 				<div className='swiper-autoplay'>
 					<button className={'swiper-autoplay-button'+ (play?' is-pause':' is-play')} onClick={handlerAutoplayToggle}><span>{play?'정지':'재생'}</span></button>

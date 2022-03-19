@@ -11,8 +11,8 @@ const Sample3 = ({swipeName}) => {
 		resistanceRatio: false,
 		speed:300,
 		navigation: {
-			nextEl: '.' + swipeName + ' .swiper-button-next',
-			prevEl: '.' + swipeName + ' .swiper-button-prev',
+			nextEl: '.' + swipeName + '> .swiper-button-next',
+			prevEl: '.' + swipeName + '> .swiper-button-prev',
 		},
 	}
 

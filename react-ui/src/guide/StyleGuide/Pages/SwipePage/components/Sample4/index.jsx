@@ -10,8 +10,8 @@ const Sample4 = ({swipeName}) => {
 		slidesPerView: 2,
 		slidesPerGroup: 2,
 		navigation: {
-			nextEl: '.' + swipeName + ' .swiper-button-next',
-			prevEl: '.' + swipeName + ' .swiper-button-prev',
+			nextEl: '.' + swipeName + '> .swiper-button-next',
+			prevEl: '.' + swipeName + '> .swiper-button-prev',
 		},
 		breakpoints: {			
 			// >= 640

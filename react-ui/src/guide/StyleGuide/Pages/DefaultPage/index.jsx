@@ -8,7 +8,7 @@ class DefaultPage extends Component {
                 <section className='g_sec'>
                     <h2 className='g_h2'>기본규칙</h2>
                     <p className='gInfo'>웹환경 : 하이브리드 웹</p>
-                    <p className='gInfo'>마크업 : <a href='https://react.semantic-ui.com/' target='_blank' className='link'>semantic-ui-react 사용 (바로가기)</a></p>
+                    <p className='gInfo'>마크업 : <a href='https://react.semantic-ui.com/' target='_blank' rel='noopener noreferrer' className='link'>semantic-ui-react 사용 (바로가기)</a></p>
                     <p className='gInfo'>호환성 : 안드로이드, IOS 호환성 적용</p>
                     <p className='gInfo'>스크립트 : Vanilla JS</p>
                 </section>
