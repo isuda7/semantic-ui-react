@@ -1,6 +1,6 @@
 
-import './index.scss';
 import "semantic-ui-less/semantic.less";
+import './index.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

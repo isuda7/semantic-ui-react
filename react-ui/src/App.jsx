@@ -15,6 +15,7 @@ import CardPage from './guide/StyleGuide/Pages/CardPage';
 import ListPage from './guide/StyleGuide/Pages/ListPage';
 import TabPage from './guide/StyleGuide/Pages/TabPage';
 import AccordionPage from './guide/StyleGuide/Pages/AccordionPage';
+import DragDropPage from './guide/StyleGuide/Pages/DragDropPage';
 import ModalPage from './guide/StyleGuide/Pages/ModalPage';
 import SwipePage from './guide/StyleGuide/Pages/SwipePage';
 import EtcPageGroup from './guide/StyleGuide/Pages/EtcPageGroup';
@@ -61,6 +62,7 @@ const Router = () => {
                     <Route path='/guide/Lists' element={<ListPage />}/>
                     <Route path='/guide/Tabs' element={<TabPage />}/>
                     <Route path='/guide/Accordions' element={<AccordionPage />}/>
+                    <Route path='/guide/DragDrop' element={<DragDropPage />}/>
                     <Route path='/guide/Modals' element={<ModalPage />}/>
                     <Route path='/guide/Swipes' element={<SwipePage />}/>
                     <Route path='/guide/EtcGroup' element={<EtcPageGroup />}/>

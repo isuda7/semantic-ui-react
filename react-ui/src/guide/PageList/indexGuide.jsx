@@ -117,7 +117,17 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Alert, Confirm, Center, Bottom, Full</Table.Cell>
+                                <Table.Cell>Drag &amp; Drop</Table.Cell>
+                                <Table.Cell textAlign='center'></Table.Cell>
+                                <Table.Cell className='link-address'>
+                                    <Link to='/guide/DragDrop' target='reactFrame'/>
+                                </Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                            </Table.Row>
+                            <Table.Row verticalAlign='top'>
+                                <Table.Cell>Alert, Confirm, Basic, Buttom Sheet</Table.Cell>
                                 <Table.Cell textAlign='center'></Table.Cell>
                                 <Table.Cell className='link-address'>
                                     <Link to='/guide/Modals' target='reactFrame'/>

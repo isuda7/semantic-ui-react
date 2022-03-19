@@ -4,11 +4,11 @@ import './style.css';
 
 const LayoutGuide = ({children}) => {
   return (
-    <div className='g-wrap'>
+    <div className='g_wrap'>
         <header>
             <h1>Publishing Guide</h1>
         </header>
-        <div className='g-cont'>
+        <div className='g_cont'>
           <Outlet />
         </div>
     </div>

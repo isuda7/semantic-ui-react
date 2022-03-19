@@ -9,6 +9,7 @@ import {
     CardPage,
     TabPage,
     AccordionPage,
+    DragDropPage,
     ModalPage,
     EtcPageGroup,
     CustomPage,
@@ -42,6 +43,9 @@ class GuideAll extends Component {
 
                 {/* Accodions */}
                 <AccordionPage />
+
+                {/* DragDrop */}
+                <DragDropPage />
 
                 {/* Modals */}
                 <ModalPage />

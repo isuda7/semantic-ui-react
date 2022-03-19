@@ -7,6 +7,7 @@ export { default as DividerPage } from './DividerPage';
 export { default as CardPage } from './CardPage';
 export { default as TabPage } from './TabPage';
 export { default as AccordionPage } from './AccordionPage';
+export { default as DragDropPage } from './DragDropPage';
 export { default as ModalPage } from './ModalPage';
 export { default as PopupPage } from './PopupPage';
 export { default as EtcPageGroup } from './EtcPageGroup';
