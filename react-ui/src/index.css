@@ -144,22 +144,76 @@ input::-webkit-calendar-picker-indicator {-webkit-appearance:none;}
 	속성순서 : 레이아웃, 크기여백, 박스모양, 글자모양, 문단모양, 기타모양
 -------------------------------------------------------------------*/
 /* Layout */
-.in_sec {padding-left: var(--side-gap); padding-right: var(--side-gap);}
-.out-sec {margin-left: calc(-1 * var(--side-gap)); margin-right: calc(-1 * var(--side-gap));}
+.in_sec {
+	padding-left: var(--side-gap);
+	padding-right: var(--side-gap);
+}
+
+.out-sec {
+	margin-left: calc(-1 * var(--side-gap));
+	margin-right: calc(-1 * var(--side-gap));
+}
 
 /*-------------------------------------------------------------------
 	분류그룹 : Components
 	속성순서 : 레이아웃, 크기여백, 박스모양, 글자모양, 문단모양, 기타모양
 -------------------------------------------------------------------*/
 /* Swiper */
-.swiper {position:relative;}
-.swiper > .swiper-button-prev,
-.swiper > .swiper-button-next {margin:0;top:50%; transform:translateY(-50%);}
-.swiper > .swiper-container > .swiper-button-prev,
-.swiper > .swiper-container > .swiper-button-next {display:none;}
-.swiper .swiper-pagination {display:flex; justify-content:center; width:100%; bottom:10px;}
-.swiper .swiper-pagination-bullet {margin:0 3px;}
+.swiper {
+	position: relative;
+}
+
+.swiper>.swiper-button-prev,
+.swiper>.swiper-button-next {
+	margin: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.swiper>.swiper-container>.swiper-button-prev,
+.swiper>.swiper-container>.swiper-button-next {
+	display: none;
+}
+
+.swiper .swiper-pagination {
+	display: flex;
+	justify-content: center;
+	position:static;
+	width: 100%;
+	bottom: 10px;
+}
+
+.swiper .swiper-pagination-bullet {
+	margin: 0 3px;
+}
+
+.swiper .swiper-controller {
+	position: relative;
+	z-index: 1;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper .swiper-controller .swiper-pagination {
+	width:auto;
+}
+.swiper .swiper-controller .swiper-pagination + .swiper-autoplay {
+	margin-left:10px;
+}
 
 /* Section */
-.sec_head {display:flex; justify-content: space-between; align-items:flex-end;}
-.sec h2, .sec h3, .sec h4, .sec p {font-family:inherit; margin:0; line-height:inherit;}
+.sec_head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.sec h2,
+.sec h3,
+.sec h4,
+.sec p {
+	font-family: inherit;
+	margin: 0;
+	line-height: inherit;
+}
