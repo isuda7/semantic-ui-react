@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Section01, Section02} from './components';
-import './style.css';
+import './style.scss';
 
 class MainIndex extends Component {
     render() {

@@ -35,7 +35,7 @@
 .sub_wrapper>.container {
 	width: 100%;
 	margin: 0;
-	padding: 24px var(--side-gap);
+	padding: 24px $gapSideBase;
 }
 
 /*-------------------------------------------------------------------
@@ -45,7 +45,7 @@
 	display: flex;
 	align-items: center;
 	height: 52px;
-	padding: 0 var(--side-gap);
+	padding: 0 $gapSideBase;
 	background-color: #000;
 	color: #fff;
 }
@@ -56,7 +56,7 @@
 .sub_wrapper>.footer {
 	display: flex;
 	align-items: center;
-	padding: 12px var(--side-gap);
+	padding: 12px $gapSideBase;
 	background-color: #666;
 	color: #fff;
 }

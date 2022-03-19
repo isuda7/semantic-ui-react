@@ -1,5 +1,21 @@
 /*******************************
      User Global Variables
 *******************************/
-@pageBackground: #ffffff;
-@primaryColor: #ff664d;
+/* 강조 */
+@colorPrimary: orange;
+@colorSecondary: green;
+@coloreEphasis: green;
+
+/* 항목 */
+@colorCateAi: #9f3fc5;
+@colorCateDt: #613fc6;
+@colorCateHappinesst: #ff9600;
+@colorCateSV: #ee712c;
+@colorCateDesign: #d72d2f;
+@colorCateGlobal: #38b84c;
+@colorCateLeadership: #2987cd;
+@colorCateManagement: #28b4ac;
+@colorCateSemicond: #4b6bcc;
+@colorCateGreen: #009abd;
+@colorCateBM: #bd38a5;
+@colorCateSkacademy: #ea6957;

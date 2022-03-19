@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { MainEventSwiper } from '../../components';
-import './style.css';
+import './style.scss';
 
 class Section01 extends Component {
     render() {

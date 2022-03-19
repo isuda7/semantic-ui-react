@@ -1,6 +1,5 @@
 
-import './variables.css';
-import './index.css';
+import './index.scss';
 import "semantic-ui-less/semantic.less";
 
 import React from 'react';
