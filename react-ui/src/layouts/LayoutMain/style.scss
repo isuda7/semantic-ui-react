@@ -1,5 +1,9 @@
-@charset 'UTF-8';
+@import '../../resources/scss/variables';
+@import '../../resources/scss/mixins';
 
+/*-------------------------------------------------------------------
+    @Default Layout
+-------------------------------------------------------------------*/
 /* Default */
 .main_wrapper {
     min-height: 100%;
@@ -45,7 +49,7 @@
 .main_wrapper>.footer {
     display: flex;
     align-items: center;
-    padding: 12px $gapSideBase;
+    padding: 12px $gapSideBase ;
     background-color: #666;
     color: #fff;
 }

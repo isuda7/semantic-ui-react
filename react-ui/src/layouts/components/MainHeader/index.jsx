@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Button, Icon} from 'semantic-ui-react'
 import {Navigation} from '../../components'
-import './style.css';
+import './style.scss';
 
 class MainHeader extends Component {
     state = {open: false};

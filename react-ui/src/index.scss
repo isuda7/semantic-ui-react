@@ -1,5 +1,6 @@
 @charset 'UTF-8';
-@import './resources/scss/variables.scss';
-@import './resources/scss/base.scss';
-@import './resources/scss/utilities.scss';
-@import './resources/scss/common.scss';
+@import './resources/scss/variables';
+@import './resources/scss/mixins';
+@import './resources/scss/base';
+@import './resources/scss/utilities';
+@import './resources/scss/common';

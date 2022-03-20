@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import './style.css';
+import './style.scss';
 
 const LayoutGuide = ({children}) => {
   return (

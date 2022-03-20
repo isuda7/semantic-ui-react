@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import {Button, Icon} from "semantic-ui-react"
-import './style.css';
+import './style.scss';
 
 class BannerNotice extends Component {
     state = {isOpened: true};

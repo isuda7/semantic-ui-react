@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 // import {Button, Icon, Menu} from "semantic-ui-react"
-import './style.css';
+import './style.scss';
 
 const Navigation = () => {
 	return (
