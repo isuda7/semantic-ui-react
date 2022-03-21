@@ -41,12 +41,20 @@
 .sub_wrapper>.header {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	height: 52px;
 	padding: 0 $gapSideBase;
 	background-color: #000;
 	color: #fff;
 }
-
+.sub_wrapper>.header.is_dark {
+	color:#fff;
+}
+.sub_wrapper>.header>div {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .sub_wrapper>.footer {
 	display: flex;
 	align-items: center;
