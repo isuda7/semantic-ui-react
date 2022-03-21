@@ -4,12 +4,12 @@ import { SubHeader } from '../../../layouts/components';
 import { Section01, Section02 } from './components';
 import './style.css';
 
-class Template02 extends Component {
+class Template03 extends Component {
     render() {
         return (
             <div className='sub_wrapper'>
-                <SubHeader addBtnCopy addBtnBookmark addBtnMore className='bg_black' />
-                <main role="main" className='container bg_black'>
+                <SubHeader addBtnCopy addBtnBookmark addBtnMore className='bg_black bg_opacity' />
+                <main role="main" className='container bg_dark'>
                     <div className='content_head'>
                         <h2>Content Heading 2</h2>
                         <p className='summary'>Content Heading Summary</p>
@@ -28,4 +28,4 @@ class Template02 extends Component {
         )
     }
 }
-export default Template02
+export default Template03

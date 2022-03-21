@@ -26,7 +26,7 @@ import CustomPage from './guide/StyleGuide/Pages/CustomPage';
 // Guide Templates
 import Template01 from './guide/Prototype/Template01';
 import Template02 from './guide/Prototype/Template02';
-import Template02NoData from './guide/Prototype/Template02/NoData';
+import Template03 from './guide/Prototype/Template03';
 
 // Layout
 import LayoutGuide from './layouts/LayoutGuide';
@@ -70,7 +70,7 @@ const Router = () => {
                     {/* Custom UI */}
                     <Route path='/guide/Custom' element={<CustomPage />}/>
                 </Route>
-                
+
                 {/* Main */}
                 <Route path='/' element={<LayoutMain />}>
                     <Route path='/Main/MainIndex' element={<MainIndex />}/>
@@ -81,7 +81,7 @@ const Router = () => {
                     {/* Prototype */}
                     <Route path='/guide/Prototype/Template01' element={<Template01 />}/>
                     <Route path='/guide/Prototype/Template02' element={<Template02 />}/>
-                    <Route path='/guide/Prototype/Template02/NoData' element={<Template02NoData />}/>
+                    <Route path='/guide/Prototype/Template03' element={<Template03 />}/>
                 </Route>
             </Routes>
         </BrowserRouter>

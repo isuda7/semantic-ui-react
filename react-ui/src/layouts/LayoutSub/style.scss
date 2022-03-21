@@ -44,19 +44,6 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	// Cases
-	&.bg_black {
-		background-color: #000;
-		color:#fff;
-	}
-	&.bg_white {
-		background-color: #fff;
-		color:#222;
-	}
-	&.bg_black.bg_opacity {
-		background-color: transparent;
-		color:#fff;
-	}
 }
 
 /* Container Styles */
@@ -73,19 +60,6 @@
 	>.content_body {
 		padding-left: $gapSideBase;
 		padding-right: $gapSideBase;
-		&.bg_gray,
-		&.bg_gray + .content_foot {
-			background-color: #eee;
-		}
-	}
-	// Cases
-	&.bg_black {
-		background-color: #000;
-		color:#fff;
-	}
-	&.bg_dark {
-		background-color: #333;
-		color:#fff;
 	}
 }
 

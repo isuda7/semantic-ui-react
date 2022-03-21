@@ -9,6 +9,7 @@
 .ui.button.icon {margin:0; padding:5px;}
 
 /* Colors */
+.ui.button.primary:hover,
 .ui.button.primary:focus,
 .ui.button.primary:active,
 .ui.button.primary {background-color:@colorPrimary;}

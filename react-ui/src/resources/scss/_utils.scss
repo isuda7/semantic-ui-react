@@ -246,6 +246,17 @@
 .bg_light {
 	background-color: #f8f8f8;
 }
+.bg_black {
+	background-color: #000;
+	color: #fff;
+}
+.bg_dark {
+	background-color: #333;
+	color: #fff;
+}
+.bg_opacity {
+	background-color: transparent;
+}
 
 /* 강조 */
 .bg_primary {

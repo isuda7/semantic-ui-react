@@ -203,7 +203,7 @@ class PageList extends Component {
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
                                 <Table.Cell className='link-address'>
-                                    <Link to='/guide/Prototype/Template02/NoData' target='reactFrame'/>
+                                    <Link to='/guide/Prototype/Template03' target='reactFrame'/>
                                 </Table.Cell>
                                 <Table.Cell></Table.Cell>
                                 <Table.Cell></Table.Cell>
