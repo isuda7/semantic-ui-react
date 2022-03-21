@@ -60,20 +60,20 @@ input::-webkit-calendar-picker-indicator {-webkit-appearance:none;}
 -------------------------------------------------------------------*/
 /* Default */
 :root {
-	--safe-top: 0px;
-	--safe-bottom: 0px;
+	--safeTop: 0px;
+	--safeBottom: 0px;
 }
 /* iOS 11.0 버전 */
-@supports (--safe-top: constant(safe-area-inset-top)) {
+@supports (--safeTop: constant(safe-area-inset-top)) {
 	:root {
-		--safe-top: constant(safe-area-inset-top);
-		--safe-bottom: constant(safe-area-inset-bottom);
+		--safeTop: constant(safe-area-inset-top);
+		--safeBottom: constant(safe-area-inset-bottom);
 	}
 }
 /* iOS 11.2 이상 */
-@supports (--safe-top: env(safe-area-inset-top)) {
+@supports (--safeTop: env(safe-area-inset-top)) {
 	:root {
-		--safe-top: env(safe-area-inset-top);
-		--safe-bottom: env(safe-area-inset-bottom);
+		--safeTop: env(safe-area-inset-top);
+		--safeBottom: env(safe-area-inset-bottom);
 	}
 }

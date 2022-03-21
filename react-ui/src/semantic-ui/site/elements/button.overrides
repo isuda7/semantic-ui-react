@@ -1,10 +1,20 @@
 /*******************************
          Site Overrides
 *******************************/
-
 /* Default */
 .ui.button {display:inline-flex; justify-content:center; align-items:center; margin:0; padding:10px; color:inherit;}
 .ui.button:hover,
 .ui.button:active,
 .ui.button:focus {color:inherit;}
-.ui.button.icon {margin:0; padding:10px;}
+.ui.button.icon {margin:0; padding:5px;}
+
+/* Colors */
+.ui.button.primary:focus,
+.ui.button.primary:active,
+.ui.button.primary {background-color:@colorPrimary;}
+
+/* Content */
+.page_action {display:flex; padding:16px @gapSideBase;}
+.page_action .ui.button:not(.primary) {background:gray; color:#fff;}
+.page_action .ui.button {flex:1 1 auto; height:42px;}
+.page_action .ui.button + .ui.button {margin-left:10px;}

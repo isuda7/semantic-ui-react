@@ -8,20 +8,20 @@ class Template01 extends Component {
     render() {
         return (
             <div className='sub_wrapper'>
-                <SubHeader isDark isOverwap addBtnCopy addBtnBookmark addBtnMore title='Title 영역입니다.' />
+                <SubHeader className='bg_white' title='Title 영역입니다.' />
                 <main role="main" className='container'>
                     <div className='content_head'>
                         <h2>Content Heading 2</h2>
+                        <p className='summary'>Content Heading Summary</p>
                     </div>
-                    <div className='content_body'>
+                    <div className='content_body bg_light'>
                         <Section01 />
                         <Section02 />
                     </div>
-                    <div className='content_foot'>
+                    <div className='content_foot bg_light'>
                         <div className='page_action'>
-                            <Button type='button'><span className='blind'>버튼2</span></Button>
-                            <Button type='button'><span className='blind'>버튼3</span></Button>
-
+                            <Button type='button'>버튼</Button>
+                            <Button type='button' className='primary'>버튼</Button>
                         </div>
                     </div>
                 </main>

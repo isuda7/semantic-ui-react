@@ -167,14 +167,14 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                         </Table.Body>
-                        <Table.Body>   
+                        <Table.Body>
                             <Table.Row verticalAlign='top' id='CommunityTemplete'>
                                 <Table.Cell colSpan='6' className='table-tit'>
                                     <span className='text-bold'>Prototype</span>
                                 </Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Basic</Table.Cell>
+                                <Table.Cell>Layout Basic - White</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
@@ -186,7 +186,7 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Board - Card</Table.Cell>
+                                <Table.Cell>Layout Basic - Dark</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
@@ -198,12 +198,12 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Board - Card - NoData</Table.Cell>
+                                <Table.Cell>Layout Basic - Opacity</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
                                 <Table.Cell className='link-address'>
-                                    <Link to='/guide/Prototype/Template02/NoData' target='reactFrame'/>                                        
+                                    <Link to='/guide/Prototype/Template02/NoData' target='reactFrame'/>
                                 </Table.Cell>
                                 <Table.Cell></Table.Cell>
                                 <Table.Cell></Table.Cell>

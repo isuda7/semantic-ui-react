@@ -6,7 +6,12 @@ class Section02 extends Component {
         return (
             <div className='sec'>
                 <h3 className='blind'>Heading3</h3>
-                <p>Section02 - 헤더가 없는 섹션</p>
+                <ul>
+                    <li>Section02 - Item1</li>
+                    <li>Section02 - Item2</li>
+                    <li>Section02 - Item3</li>
+                    <li>Section02 - Item4</li>
+                </ul>
             </div>
         )
     }
