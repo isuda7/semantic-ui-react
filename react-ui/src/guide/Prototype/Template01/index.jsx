@@ -8,7 +8,7 @@ class Template01 extends Component {
     render() {
         return (
             <div className='sub_wrapper'>
-                <SubHeader className='bg_white' title='Title 영역입니다.' />
+                <SubHeader addBack className='is_white' title='Title 영역입니다.' />
                 <main role="main" className='container'>
                     <div className='content_head'>
                         <h2>Content Heading 2</h2>

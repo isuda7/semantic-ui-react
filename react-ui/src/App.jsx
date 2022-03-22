@@ -24,6 +24,8 @@ import EtcPageGroup from './guide/StyleGuide/Pages/EtcPageGroup';
 import CustomPage from './guide/StyleGuide/Pages/CustomPage';
 
 // Guide Templates
+import TempMain from './guide/Prototype/TempMain';
+import TempSubmain from './guide/Prototype/TempSubmain';
 import Template01 from './guide/Prototype/Template01';
 import Template02 from './guide/Prototype/Template02';
 import Template03 from './guide/Prototype/Template03';
@@ -79,6 +81,8 @@ const Router = () => {
                 {/* Sub */}
                 <Route path='/' element={<LayoutSub />}>
                     {/* Prototype */}
+                    <Route path='/guide/Prototype/TempMain' element={<TempMain />}/>
+                    <Route path='/guide/Prototype/TempSubmain' element={<TempSubmain />}/>
                     <Route path='/guide/Prototype/Template01' element={<Template01 />}/>
                     <Route path='/guide/Prototype/Template02' element={<Template02 />}/>
                     <Route path='/guide/Prototype/Template03' element={<Template03 />}/>

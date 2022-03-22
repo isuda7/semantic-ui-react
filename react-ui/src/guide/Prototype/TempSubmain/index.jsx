@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import { Button } from 'semantic-ui-react';
-import { SubHeader } from '../../../layouts/components';
+import { MainHeader, MainFooter } from '../../../layouts/components';
 import { Section01, Section02 } from './components';
 import './style.css';
 
-class Template03 extends Component {
+class TempSubmain extends Component {
     render() {
         return (
-            <div className='sub_wrapper'>
-                <SubHeader addBack addList addMore className='is_black' />
-                <main role="main" className='container bg_dark'>
+            <div className='sub_wrapper main'>
+                <MainHeader submain title='추천' />
+                <main role="main" className='container'>
                     <div className='content_head'>
                         <h2>Content Heading 2</h2>
                         <p className='summary'>Content Heading Summary</p>
@@ -24,8 +24,9 @@ class Template03 extends Component {
                         </div>
                     </div>
                 </main>
+                <MainFooter />
             </div>
         )
     }
 }
-export default Template03
+export default TempSubmain

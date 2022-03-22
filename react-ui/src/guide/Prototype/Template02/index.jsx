@@ -8,7 +8,7 @@ class Template02 extends Component {
     render() {
         return (
             <div className='sub_wrapper'>
-                <SubHeader addBtnCopy addBtnBookmark addBtnMore className='bg_black' />
+                <SubHeader addBack addLearning addWish addMore className='is_black' />
                 <main role="main" className='container bg_black'>
                     <div className='content_head'>
                         <h2>Content Heading 2</h2>

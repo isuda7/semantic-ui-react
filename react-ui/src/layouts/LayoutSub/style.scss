@@ -2,7 +2,7 @@
 @import '../../resources/scss/mixins';
 
 /*-------------------------------------------------------------------
-    @Default Layout
+    @Layout
 -------------------------------------------------------------------*/
 /* Default */
 .sub_wrapper {
@@ -43,6 +43,15 @@
 		display:flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	// Case
+	&.is_white {
+		background-color: transparent;
+		color:$colorTitle;
+	}
+	&.is_black {
+		background-color: transparent;
+		color:white;
 	}
 }
 

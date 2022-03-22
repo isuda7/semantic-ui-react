@@ -174,7 +174,31 @@ class PageList extends Component {
                                 </Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Layout Basic - White</Table.Cell>
+                                <Table.Cell>Layout Main</Table.Cell>
+                                <Table.Cell textAlign='center'>
+                                    {/* (<span>AL-MA-10</span>) */}
+                                </Table.Cell>
+                                <Table.Cell className='link-address'>
+                                    <Link to='/guide/Prototype/TempMain' target='reactFrame'/>
+                                </Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                            </Table.Row>
+                            <Table.Row verticalAlign='top'>
+                                <Table.Cell>Layout Submain</Table.Cell>
+                                <Table.Cell textAlign='center'>
+                                    {/* (<span>AL-MA-10</span>) */}
+                                </Table.Cell>
+                                <Table.Cell className='link-address'>
+                                    <Link to='/guide/Prototype/TempSubmain' target='reactFrame'/>
+                                </Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell></Table.Cell>
+                            </Table.Row>
+                            <Table.Row verticalAlign='top'>
+                                <Table.Cell>Layout Sub - Basic White</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
@@ -186,7 +210,7 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Layout Basic - Dark</Table.Cell>
+                                <Table.Cell>Layout Sub - Basic Dark 1</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
@@ -198,7 +222,7 @@ class PageList extends Component {
                                 <Table.Cell></Table.Cell>
                             </Table.Row>
                             <Table.Row verticalAlign='top'>
-                                <Table.Cell>Layout Basic - Opacity</Table.Cell>
+                                <Table.Cell>Layout Sub - Basic Dark 2</Table.Cell>
                                 <Table.Cell textAlign='center'>
                                     {/* (<span>AL-MA-10</span>) */}
                                 </Table.Cell>
