@@ -1,6 +1,6 @@
 import React from 'react';
 import { Popup, Button } from 'semantic-ui-react';
-
+import './style.scss'
 // className: bg_black bg_white bg_opacity 등 사용자정의 클래스
 
 // addBack: 뒤로가기 버튼

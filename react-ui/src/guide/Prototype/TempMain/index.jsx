@@ -9,8 +9,10 @@ class TempMain extends Component {
             <div className='main_wrapper'>
                 <MainHeader main title='신사임당' />
                 <main role='main' className='container'>
-                    <Section01 />
-                    <Section02 />
+                    <div className='content_body'>
+                        <Section01 />
+                        <Section02 />
+                    </div>
                 </main>
                 <MainFooter />
             </div>

@@ -1,3 +1,14 @@
-/* Drower */
-.header .ui.button.drower {margin-left:-8px; width:40px; height:40px; padding:0; color:#fff; font-size:24px;}
-.header .ui.button.drower .icon {height:auto;}
+@import '../../../resources/scss/variables';
+@import '../../../resources/scss/mixins';
+
+/* Footer Styles */
+.sub_wrapper.main>.footer,
+.main_wrapper>.footer {
+    display: flex;
+    align-items: center;
+    padding: 12px $gapSideBase;
+    background-color: #666;
+    color: #fff;
+    .ui.button.drower {margin-left:-8px; width:40px; height:40px; padding:0; color:#fff; font-size:24px;}
+    .ui.button.drower .icon {height:auto;}
+}
