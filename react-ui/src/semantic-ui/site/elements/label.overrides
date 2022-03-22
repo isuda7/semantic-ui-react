@@ -2,10 +2,10 @@
          Site Overrides
 *******************************/
 /* Default */
-.ui.label {display:inline-flex; align-items:center; justify-content:space-beteen; margin:0; text-align:center; color:#fff;}
+.ui.label {display:inline-flex; align-items:center; justify-content:space-beteen; margin:0; text-align:center; color:#fff; font-size:1.4rem;}
 
 /* Category Labels */
-.ui.label.cate {border-radius:4px; background-color:#999999;}
+.ui.label.cate {border-radius:0.4rem; background-color:#999999;}
 .ui.label.cate.ai {background-color:@colorCateAi;}
 .ui.label.cate.dt {background-color:@colorCateDt;}
 .ui.label.cate.happinesst {background-color:@colorCateHappinesst;}

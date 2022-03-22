@@ -1,8 +1,9 @@
-/*******************************
+/*******************************************
      User Global Variables
-*******************************/
+     _variables.scss 파일과 동일해야 함.
+********************************************/
 // 간격 (Margin, Padding)
-@gapSideBase: 24px;
+@gapSideBase: 2.0rem;
 
 // 사이즈 (Width, Height)
 @heightHeader: 52px;
@@ -14,7 +15,7 @@
 @colorLink: #999999;
 
 // 컬러 강조
-@colorPrimary: orange;
+@colorPrimary: #ff664d;
 @colorSecondary: green;
 @coloreEphasis: green;
 

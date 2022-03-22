@@ -1,39 +1,39 @@
 /* guide 레이아웃 스타일 */
 .g_wrap header {
     width: 100%;
-    padding: 25px 0;
+    padding: 2.5rem 0;
 }
 
 .g_wrap header h1 {
-    padding-left: 20px;
+    padding-left: 2.0rem;
     color: #121212;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2.0rem;
     line-height: 1;
 }
 .g_wrap h2.test {
     color: #121212;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1;
 }
 
 .g_cont {
-    /* max-width: 1200px; */
-    padding: 0 20px 20px;
+    /* max-width: 120.0rem; */
+    padding: 0 2.0rem 2.0rem;
 }
 
 .g_cont .gTit:before {
     content: '*';
-    margin-right: 10px;
+    margin-right: 1.0rem;
     color: #ac0c3c;
 }
 
 .g_cont .gInfo {
-    margin: 0 0 10px;
-    padding-left: 20px;
+    margin: 0 0 1.0rem;
+    padding-left: 2.0rem;
     color: #000;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.5
 }
 
@@ -41,19 +41,19 @@
     content: "";
     position: relative;
     display: inline-block;
-    width:4px;
-    height:4px;
-    top:-2px;
+    width:0.4rem;
+    height:0.4rem;
+    top:-0.2rem;
     background-color: #777;
-    margin-right: 10px;
+    margin-right: 1.0rem;
     color: #777;
     border-radius: 50%;
 }
 
 .g_cont .preview {
-    min-height: 30px;
-    margin-bottom: 40px;
-    /* padding: 0 0 0 20px; */
+    min-height: 3.0rem;
+    margin-bottom: 4.0rem;
+    /* padding: 0 0 0 2.0rem; */
 }
 
 .g_cont .link {
@@ -61,20 +61,20 @@
 }
 
 .g_cont .g_h2 {
-    margin-bottom:20px;
-    padding-top:20px;
+    margin-bottom:2.0rem;
+    padding-top:2.0rem;
     border-top: 1px dashed #666;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: red;
 }
 
 .g_cont .g_h3 {
     background-color: #666;
-    margin: 20px 0;
-    padding: 5px 10px;
+    margin: 2.0rem 0;
+    padding: 0.5rem 1.0rem;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fff;
 }
 

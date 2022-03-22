@@ -37,11 +37,9 @@
 	padding-top: calc($heightHeader + var(--safeTop));
 	padding-bottom: var(--safeBottom);
 	line-height: 1.5;
-	>.content_head {
-		padding-left: $gapSideBase;
-		padding-right: $gapSideBase;
-	}
-	>.content_body {
+	>.content_head,
+	>.content_body,
+	>.content_foot {
 		padding-left: $gapSideBase;
 		padding-right: $gapSideBase;
 	}

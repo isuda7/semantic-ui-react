@@ -4,10 +4,10 @@
 // ---------------------------------------------------------
 
 // 간격 (Margin, Padding)
-$gapSideBase: 24px;
+$gapSideBase: 2.0rem;
 
 // 사이즈 (Width, Height)
-$heightHeader: 52px;
+$heightHeader: 5.2rem;
 
 // 컬러 맥락
 $colorTitle: #222222;
@@ -16,7 +16,7 @@ $colorInfo: #999999;
 $colorLink: #999999;
 
 // 컬러 강조
-$colorPrimary: orange;
+$colorPrimary: #ff664d;
 $colorSecondary: green;
 $coloreEphasis: green;
 
@@ -35,7 +35,7 @@ $colorCateBM: #bd38a5;
 $colorCateSkacademy: #ea6957;
 
 // 컬러 상태
-$colorSuccessed: green; 
+$colorSuccessed: green;
 $colorFailed: red;
 $colorCompleted: blue;
 $colorErrored: red;

@@ -2,11 +2,11 @@
          Site Overrides
 *******************************/
 /* Default */
-.ui.button {display:inline-flex; justify-content:center; align-items:center; margin:0; padding:10px; color:inherit;}
+.ui.button {display:inline-flex; justify-content:center; align-items:center; margin:0; padding:1.0rem; color:inherit; font-size:1.4rem;}
 .ui.button:hover,
 .ui.button:active,
 .ui.button:focus {color:inherit;}
-.ui.button.icon {margin:0; padding:5px;}
+.ui.button.icon {margin:0; padding:0.5rem;}
 
 /* Colors */
 .ui.button.primary:hover,
@@ -15,7 +15,7 @@
 .ui.button.primary {background-color:@colorPrimary;}
 
 /* Content */
-.page_action {display:flex; padding:16px @gapSideBase;}
+.page_action {display:flex; padding:1.6rem 0;}
+.page_action .ui.button {flex:1 1 auto; height:5.2rem; font-size:1.6rem; font-weight:700; border-radius:0.4rem;}
+.page_action .ui.button + .ui.button {margin-left:0.6rem;}
 .page_action .ui.button:not(.primary) {background:gray; color:#fff;}
-.page_action .ui.button {flex:1 1 auto; height:42px;}
-.page_action .ui.button + .ui.button {margin-left:10px;}
