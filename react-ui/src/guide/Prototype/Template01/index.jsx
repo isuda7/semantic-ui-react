@@ -14,11 +14,11 @@ class Template01 extends Component {
                         <h2>Content Heading 2</h2>
                         <p className='summary'>Content Heading Summary</p>
                     </div>
-                    <div className='content_body bg_light'>
+                    <div className='content_body'>
                         <Section01 />
                         <Section02 />
                     </div>
-                    <div className='content_foot bg_light'>
+                    <div className='content_foot'>
                         <div className='page_action'>
                             <Button type='button'>버튼</Button>
                             <Button type='button' className='primary'>버튼</Button>
