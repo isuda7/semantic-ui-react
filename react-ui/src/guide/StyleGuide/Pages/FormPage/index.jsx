@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Button, Checkbox, Form, Input, Label} from "semantic-ui-react";
+import {Button, Checkbox, Form, Input} from "semantic-ui-react";
 import { InputSrch } from '../../../../components';
 import SelectButtomSheet from './SelectButtomSheet';
 
@@ -12,12 +12,12 @@ const FormPage = () => {
             <div className='preview'>
                 <Form>
                     <Form.Field>
-                    <label htmlFor="formName'>First Name</label>
-                    <Input id='formName" placeholder='First Name' />
+                    <label htmlFor='formName'>First Name</label>
+                    <Input id='formName' placeholder='First Name' />
                     </Form.Field>
                     <Form.Field>
-                    <label htmlFor="formName2'>Last Name</label>
-                    <Input id='formName2" placeholder='Last Name' />
+                    <label htmlFor='formName2'>Last Name</label>
+                    <Input id='formName2' placeholder='Last Name' />
                     </Form.Field>
                     <Form.Field>
                     <Checkbox label='I agree to the Terms and Conditions' />
@@ -44,13 +44,12 @@ const FormPage = () => {
             {/* Select */}
             <h2 className='g_h2'>Select</h2>
             <div className='preview'>
-                <Label></Label>
-                <SelectButtomSheet value='Select Placeholder' placeholder='선택하세요.'>
-                    asdf
-                </SelectButtomSheet>
-                <SelectButtomSheet value='Select Placeholder' placeholder='선택하세요.' disabled='true'>
-                    <div>목록</div>
-                </SelectButtomSheet>
+                <SelectButtomSheet title='셀렉트 제목' value='Select Placeholder' placeholder='선택하세요.' items={
+                    ['Item1', 'Item2', 'Item3', 'Item4', 'Item5']
+                }/>
+                <SelectButtomSheet value='Select Placeholder' placeholder='선택하세요.' disabled items={
+                    ['Item1', 'Item2', 'Item3', 'Item4', 'Item5']
+                } />
             </div>
 
             {/* Checkbox */}

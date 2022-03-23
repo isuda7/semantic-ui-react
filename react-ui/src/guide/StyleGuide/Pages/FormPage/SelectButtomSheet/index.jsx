@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { BottomSheet } from 'react-spring-bottom-sheet'
 import { Button } from "semantic-ui-react";
 import 'react-spring-bottom-sheet/dist/style.css'
 
 const SelectButtomSheet = (props) => {
-	const [isDisable, setIsDisabled] = useState(false);
-	const [isValue, setIsValue] = useState(false);
-	const [value, setValue] = useState('');
 	const [open, setOpen] = useState(false);
+	const [value] = useState(() => {
+		return (typeof props.value === 'string') ? props.value : '';
+	});
+	const text = useMemo(() => {
+		return (value === '') ? props.placeholder : props.value;
+	}, [value]);
 
-	// Ensure it animates in when loaded
-	useEffect(() => {
-		if (typeof props.value === 'string' && props.value !== ''){
-			setValue(props.value);
-			setIsValue(true);
-		} else if (typeof props.placeholder === 'string' && props.placeholder !== ''){
-			setValue(props.placeholder);
-		};
-		setOpen(false);
-	}, [value])
-	useEffect(() => {
-		if (props.disabled === 'true' || props.disabled === true ){
-			setIsDisabled(props.disabled);
-		}
-	}, [])
+	const items = props.items.map((menu) => (<li><Button>{menu}</Button></li>));
 
 	function onDismiss() {
 		setOpen(false)
@@ -31,7 +20,11 @@ const SelectButtomSheet = (props) => {
 
 	return (
 		<>
-			<Button className={"select"+ (isValue ? ' is_valued':'' )} onClick={() => setOpen(true)} disabled={isDisable}>{value}</Button>
+			<Button
+				className={"select"+ (props.value === '' ? ' is_valued':'')}
+				disabled={(props.disabled ? true : false)}
+				onClick={() => setOpen(true)}
+			>{text}</Button>
 			<BottomSheet
 				/* Options: https://github.com/stipsan/react-spring-bottom-sheet */
 				open={open}
@@ -46,7 +39,11 @@ const SelectButtomSheet = (props) => {
 					</Button>
 				}
 			>
-				{props.children}
+				<div className="in_sec">
+					<ul>
+						{ items }
+					</ul>
+				</div>
 			</BottomSheet>
 		</>
 	)
