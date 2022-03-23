@@ -14,6 +14,19 @@
 .ui.button.primary:active,
 .ui.button.primary {background-color:@colorPrimary;}
 
+/* Types */
+.ui.button.select {
+    padding:9px 36px 9px 16px;
+    border:1px solid @colorFormLine;
+    color:@colorFormText;
+}
+.ui.button.select.is_disabled {
+    color:@colorFormDisable;
+}
+.ui.button.select.is_valued {
+    color:@colorFormValue;
+}
+
 /* Content */
 .page_action {display:flex; padding:1.6rem 0;}
 .page_action .ui.button {flex:1 1 auto; height:5.2rem; font-size:1.6rem; font-weight:700; border-radius:0.4rem;}

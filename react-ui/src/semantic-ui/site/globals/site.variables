@@ -8,6 +8,12 @@
 // 사이즈 (Width, Height)
 @heightHeader: 52px;
 
+// 컬러 엘리먼트
+@colorFormLine: #e3e4e5;
+@colorFormText: #A4A6AA;
+@colorFormValue: #000000;
+@colorFormDisable: #E3E4E5;
+
 // 컬러 맥락
 @colorTitle: #222222;
 @colorPara: #666666;

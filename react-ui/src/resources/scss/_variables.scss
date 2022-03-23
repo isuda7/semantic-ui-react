@@ -1,6 +1,6 @@
 // ---------------------------------------------------------
 //	주제 : 변수정의
-//	분류 : Gaps, Sizes, Colors
+//	분류 : Gaps, Sizes, Colors, Elements
 // ---------------------------------------------------------
 
 // 간격 (Margin, Padding)
@@ -8,6 +8,12 @@ $gapSideBase: 2.0rem;
 
 // 사이즈 (Width, Height)
 $heightHeader: 5.2rem;
+
+// 컬러 엘리먼트
+$colorFormLine: #e3e4e5;
+$colorFormText: #A4A6AA;
+$colorFormValue: #000000;
+$colorFormDisabled: #E3E4E5;
 
 // 컬러 맥락
 $colorTitle: #222222;
