@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import {Button, Checkbox, Form, Input} from "semantic-ui-react";
 import { InputSrch } from '../../../../components';
-import SelectButtomSheet from './SelectButtomSheet';
 
 const FormPage = () => {
     const [value, setValue] = useState(false);
@@ -44,12 +44,13 @@ const FormPage = () => {
             {/* Select */}
             <h2 className='g_h2'>Select</h2>
             <div className='preview'>
-                <SelectButtomSheet title='셀렉트 제목' value='Select Placeholder' placeholder='선택하세요.' items={
-                    ['Item1', 'Item2', 'Item3', 'Item4', 'Item5']
-                }/>
-                <SelectButtomSheet value='Select Placeholder' placeholder='선택하세요.' disabled items={
-                    ['Item1', 'Item2', 'Item3', 'Item4', 'Item5']
-                } />
+                <p className='g_desc'>기본으로 버튼만 제공한다.</p>
+                <Button type='button' className='select'>Placeholder</Button>
+                <Button type='button' className='select is_valued'>Valueed</Button>
+                <Button type='button' className='select is_disabled' disabled>Placeholder Disabled</Button>
+                <Button type='button' className='select is_valued' disabled>Valueed Disabled</Button>
+                <p className='g_desc'>Bottomsheet Page 참고</p>
+                <p><Link to='/guide/Modals' className='g_link'>/guide/Modals</Link> 가이드 참조한다.</p>
             </div>
 
             {/* Checkbox */}

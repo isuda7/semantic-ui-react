@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Popup, Button, Image } from 'semantic-ui-react';
-import avatar36_01 from "../../../resources/images/demo/avata-profile-36-01.svg";
+import avatar36_01 from "../../../assets/images/demo/avata-profile-36-01.svg";
 import './style.scss';
 
 // className: bg_black bg_white bg_opacity 등 사용자정의 클래스

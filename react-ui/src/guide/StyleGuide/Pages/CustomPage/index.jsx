@@ -2,13 +2,13 @@ import React, {Component} from 'react'
 import { Button } from 'semantic-ui-react'
 // Custom UI
 import {
-	InputSrch, 
+	InputSrch,
 	NoData,
 	ResultData,
-	Pie, 
+	Pie,
 } from '../../../../components'
-import NoDataImg1 from '../../../../resources/images/demo/confirm.png'
-import NoDataImg2 from '../../../../resources/images/demo/alert.png'
+import NoDataImg1 from '../../../../assets/images/demo/confirm.png'
+import NoDataImg2 from '../../../../assets/images/demo/alert.png'
 import { Link } from 'react-router-dom'
 
 class CustomPage extends Component {
@@ -67,9 +67,9 @@ class CustomPage extends Component {
 				<section className='g_sec'>
 					<h2 className='g_h2'>Pie</h2>
 					<div className='preview'>
-						<p className='gInfo'>크기 필수 설정 : size="56|200"</p>
-						<p className='gInfo'>값이 있는 경우 : value="0 ~ 360"</p>
-						<p className='gInfo'>값이 없는 경우 : type="empty"</p>
+						<p className='g_info'>크기 필수 설정 : size="56|200"</p>
+						<p className='g_info'>값이 있는 경우 : value="0 ~ 360"</p>
+						<p className='g_info'>값이 없는 경우 : type="empty"</p>
 						<Pie size='56' value='60' />
 						<Pie size='56' type='empty' />
 						<Pie size='200' value='150' />

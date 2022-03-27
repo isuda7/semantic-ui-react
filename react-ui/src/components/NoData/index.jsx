@@ -1,5 +1,5 @@
 import React from 'react';
-import NoDataImg1 from '../../resources/images/demo/confirm.png'
+import NoDataImg1 from '../../assets/images/demo/confirm.png'
 import './style.css';
 
 const NoData = ({src, alt, children}) => {

@@ -19,7 +19,6 @@ const getQuestions = count =>
 class Sample1 extends Component {
 	constructor(props) {
 		super(props);
-		console.log(getQuestions(3));
 		this.state = { questions: getQuestions(5) };
 		this.onDragEnd = this.onDragEnd.bind(this);
 	}
@@ -32,7 +31,7 @@ class Sample1 extends Component {
 		}
 
 		if (result.type === "QUESTIONS") {
-			console.log(result);
+			// console.log(result);
 			const questions = Reorder(this.state.questions,result.source.index,result.destination.index);
 			this.setState({questions});
 		} else {

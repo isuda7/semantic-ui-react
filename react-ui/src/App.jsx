@@ -7,6 +7,7 @@ import PageListGuide from './guide/PageList/indexGuide';
 
 // Guide Semantic UI
 import GuideAll from './guide/StyleGuide';
+import DefaultPage from './guide/StyleGuide/Pages/DefaultPage';
 import ElementPageGroup from './guide/StyleGuide/Pages/ElementPageGroup';
 import SectionPage from './guide/StyleGuide/Pages/SectionPage';
 import FormPage from './guide/StyleGuide/Pages/FormPage';
@@ -34,7 +35,6 @@ import Template03 from './guide/Prototype/Template03';
 import LayoutGuide from './layouts/LayoutGuide';
 import LayoutSub from './layouts/LayoutSub/';
 import LayoutMain from './layouts/LayoutMain/';
-import LayoutBlank from './layouts/LayoutBlank/';
 
 // Main
 import MainIndex from './views/Main/MainIndex/';
@@ -47,7 +47,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 {/* Pagelist */}
-                <Route path='/' element={<LayoutBlank />}>
+                <Route path='/'>
                     <Route index element={<PageList />} />
                     <Route path='/Pagelist/indexGuide' element={<PageListGuide />} />
                 </Route>
@@ -56,6 +56,7 @@ const Router = () => {
                 <Route path='/' element={<LayoutGuide />}>
                     {/* Semantic UI */}
                     <Route path='/guide/GuideAll' element={<GuideAll />}/>
+                    <Route path='/guide/Default' element={<DefaultPage />}/>
                     <Route path='/guide/ElementsGroup' element={<ElementPageGroup />}/>
                     <Route path='/guide/Section' element={<SectionPage />}/>
                     <Route path='/guide/Forms' element={<FormPage />}/>

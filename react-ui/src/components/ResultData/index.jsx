@@ -1,5 +1,5 @@
 import React from 'react';
-import ResultDataImg1 from '../../resources/images/demo/confirm.png'
+import ResultDataImg1 from '../../assets/images/demo/confirm.png'
 import './style.css';
 
 const ResultData = ({src, alt, className, children}) => {
