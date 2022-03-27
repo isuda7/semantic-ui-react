@@ -291,21 +291,11 @@ class DefaultPage extends Component {
                         </ul>
                         <h3 className='g_h3'>SCSS</h3>
                         <ul>
+                            <li className='g_info'>모든 폰트 스타일은 부모의 상속을 받아야 한다.</li>
                             <li className='g_info'>@Import 되는 파일명은 _(언더바)로 시작한다. (예: _variables.scss)</li>
                             <li className='g_info'>@Import 할때는 이름만 호출한다. (예: @import '../../assets/scss/variables';)</li>
                             <li className='g_info'>변수는 수동으로 호출해야 하는 환경이므로 모든 scss 파일에서 @import 한다.</li>
                             <li className='g_info'>variables, mixins 두 개를 호출한다. (/layouts/LayoutSub/style.scss 참고)</li>
-                        </ul>
-                        <h3 className='g_h3'>Style</h3>
-                        <ul>
-                            <li className='g_info'>기본적으로 모든 스타일은 부모의 상속을 받는다.</li>
-                            <li className='g_info'>Default, Base, Basic 을 구분하여 공통을 설계한다.
-                                <ul>
-                                    <li className='g_info'>Default: 필수 범위인 기본</li>
-                                    <li className='g_info'>Base: 필수 이상의 기본</li>
-                                    <li className='g_info'>Basic: 선택 적인 기본</li>
-                                </ul>
-                            </li>
                         </ul>
                     </Accordion.Content>
 
