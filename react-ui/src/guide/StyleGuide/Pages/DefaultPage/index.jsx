@@ -43,9 +43,9 @@ class DefaultPage extends Component {
                                     <li className='g_info'>./fonts/ : 웹폰트</li>
                                     <li className='g_info'>./images/ : 이미지
                                         <ul className='g_info_list'>
-                                            <li className='g_info'>./demo/ : 프로젝트 준비용</li>
-                                            <li className='g_info'>./temp/ : 시연용 임시이미지</li>
-                                            <li className='g_info'>./scss/ : 스타일</li>
+                                            <li className='g_info'>./ : 모든 이미지</li>
+                                            <li className='g_info'>./demo/ : 데모 이미지</li>
+                                            <li className='g_info'>./temp/ : 임시 이미지</li>
                                         </ul>
                                     </li>
                                     <li className='g_info'>./scss/ : 스타일</li>
