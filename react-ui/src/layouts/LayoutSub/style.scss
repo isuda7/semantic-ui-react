@@ -1,9 +1,6 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
-/*-------------------------------------------------------------------
-    @Layout
--------------------------------------------------------------------*/
 /* Default */
 .sub_wrapper {
 	min-height: 100%;
@@ -28,36 +25,48 @@
 	}
 }
 
-
-
-/* Container Styles */
-.sub_wrapper>.container {
-	width: 100%;
-	margin: 0;
-	padding-top: calc($heightHeader + var(--safeTop));
-	padding-bottom: var(--safeBottom);
-	line-height: 1.5;
-	>.content_head,
-	>.content_body,
-	>.content_foot {
-		padding-left: $gapSideBase;
-		padding-right: $gapSideBase;
-	}
-}
-
-/* Guide Case Only */
+/* Styles */
 .sub_wrapper {
+	/* Header */
 	>.header {
-		& + .header {
-			top:$heightHeader * 1;
-			& + .header {
-				top:$heightHeader * 2;
-				& + .header {
-					top:$heightHeader * 3;
-				}
-			}
+	position:fixed;
+	left:0;
+	top:calc(0 + var(--safeTop));
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: $heightHeader;
+	padding: 0 $gapSideBase;
+	background-color: transparent;
+	color:$colorTitle;
+		>div {
+			display:flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	/* Container */
+	>.container {
+		width: 100%;
+		margin: 0;
+		padding-top: calc($heightHeader + var(--safeTop));
+		padding-bottom: var(--safeBottom);
+		line-height: 1.5;
+		>.content_head,
+		>.content_body,
+		>.content_foot {
+			padding-left: $gapSideBase;
+			padding-right: $gapSideBase;
 		}
 	}
 }
 
-
+/* Cube Wrapper */
+.cube_wrapper {
+	>.header {
+		background-color: transparent;
+		color:#fff;
+	}
+}
